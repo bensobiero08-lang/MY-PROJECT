@@ -1,0 +1,13 @@
+# Raw originals (full-size WhatsApp videos, old logos, screenshots) — kept on this computer only
+_source/
+
+# Old prototype pages
+_archive/
+
+# Generated files (rebuild with tools/build-review.ps1)
+dist/
+
+# OS clutter
+Thumbs.db
+desktop.ini
+.DS_Store

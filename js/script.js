@@ -4,30 +4,30 @@
 const WA_NUMBER = '254740131544';
 
 const GROUPS = [
-  { cat:'Nails', slug:'nails', title:'Nail Services', short:'Nails', img:'img/nails2.jpg', card:'img/nails.jpg',
+  { cat:'Nails', slug:'nails', title:'Nail Services', short:'Nails', img:'assets/img/nails2.jpg', card:'assets/img/nails.jpg',
     blurb:'Manicure, gel, tips and gum gel.',
     sub:'Manicure, gel, tips, builder gel, gum gel, pedicure and sculpting.',
     note:'Male Manicure & Pedicure Also Available ♡',
     items:[['n1','Manicure',500],['n2','Gel',500],['n3','Tips & Gel',1200],['n4','Builder Gel on Natural Nails',1200],['n5','Tips & Builder Gel',1500],
            ['n6','Gum Gel on Natural Nails',1500],['n7','Tips & Gum Gel',2000],['n8','Pedicure',700],['n9','Sculpting',2500]] },
-  { cat:'Makeup', slug:'makeup', title:'Makeup Services', short:'Make-up', img:'img/makeup2.jpg', card:'img/makeup.jpg',
+  { cat:'Makeup', slug:'makeup', title:'Makeup Services', short:'Make-up', img:'assets/img/makeup2.jpg', card:'assets/img/makeup.jpg',
     blurb:'Natural glam to full glam.',
     sub:'Natural glam, soft glam, detailed makeup and full glam.',
     items:[['m1','Natural Glam',1000],['m2','Soft Glam',1500],['m3','Detailed Makeup',2000],['m4','Full Glam',2500]] },
-  { cat:'Bridal', slug:'bridal', title:'Bridal Makeup', short:'Bridal', img:'img/glam.jpg', card:'img/glam.jpg',
+  { cat:'Bridal', slug:'bridal', title:'Bridal Makeup', short:'Bridal', img:'assets/img/glam.jpg', card:'assets/img/glam.jpg',
     blurb:'Bride, visitors and bridal team.',
     sub:'Bride, visitors and bridal team packages. Transport is catered for by the client.',
     note:'Transport to and fro is catered for by the client.', plain:true,
     items:[['br1','Bride',3500],['br2','Visitors',2000,'per person'],['br3','Bridal Team (Below 5)',2500,'per person'],['br4','Bridal Team (5 and Above)',2000,'per person']] },
-  { cat:'Lashes', slug:'lashes', title:'Lash Services', short:'Lashes', img:'img/lashes2.jpg', card:'img/lashes.jpg',
+  { cat:'Lashes', slug:'lashes', title:'Lash Services', short:'Lashes', img:'assets/img/lashes2.jpg', card:'assets/img/lashes.jpg',
     blurb:'Strip and cluster lashes.',
     sub:'Strip and cluster lashes.',
     items:[['l1','Strip Lashes',500],['l2','Cluster Lashes',1000]] },
-  { cat:'Eyebrows', slug:'eyebrows', title:'Eyebrow Services', short:'Brows', img:'img/brows.jpg', card:'img/brows.jpg',
+  { cat:'Eyebrows', slug:'eyebrows', title:'Eyebrow Services', short:'Brows', img:'assets/img/brows.jpg', card:'assets/img/brows.jpg',
     blurb:'Shaping, tinting and threading.',
     sub:'Shaping, outlining, tinting and threading.',
     items:[['e1','Eyebrow Shaping',100],['e2','Eyebrow Shaping & Outlining',300],['e3','Eyebrow Shaping & Tinting',400],['e4','Eyebrow Threading',200]] },
-  { cat:'Piercing', slug:'piercing', title:'Piercing Services', short:'Piercing', img:'img/piercing.jpg', card:'img/piercing.jpg',
+  { cat:'Piercing', slug:'piercing', title:'Piercing Services', short:'Piercing', img:'assets/img/piercing.jpg', card:'assets/img/piercing.jpg',
     blurb:'Ear and nose, earring included.',
     sub:'Ear and nose piercing, earring included.',
     items:[['p1','Ear Piercing',450,'earring included'],['p2','Nose Piercing',650,'earring included']] }
@@ -222,7 +222,7 @@ $('mlinks').addEventListener('click', e => { if (e.target.closest('a')) closeNav
 $('reels').innerHTML = REELS.map(([f, t, s, offer]) => `
   <div class="reel">
     <div class="v" data-reel role="button" tabindex="0" aria-label="Play or pause: ${t}">
-      <video src="vid/${f}.mp4" poster="vid/${f}.jpg" muted loop playsinline preload="none"></video>
+      <video src="assets/video/${f}.mp4" poster="assets/video/${f}.jpg" muted loop playsinline preload="none"></video>
       ${offer ? '<span class="badge">On offer</span>' : ''}
       <div class="play"><i>${ICON.play}</i></div>
       <button class="snd" type="button" aria-label="Turn sound on">${ICON.muted}</button>
